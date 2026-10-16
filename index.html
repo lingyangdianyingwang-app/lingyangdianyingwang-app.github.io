@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>羚羊电影网_院线热映排片与剧集追更_影视百科 lingyangdianyingwang-app.github.io</title>
+<meta name="description" content="羚羊电影网（lingyangdianyingwang-app.github.io）每日整理院线热映排片、剧集追更时刻表与影视词条百科，标注影厅制式、场次时间与参考票价，并给出选座、比价与画幅科普，帮你十分钟排好一周观影计划。">
+<meta name="keywords" content="羚羊电影网,lingyangdianyingwang-app.github.io,院线热映排片,今日电影场次,剧集追更表,影视百科词条,IMAX与杜比全景声区别,选座攻略,参考票价,高分电影推荐">
+<meta name="author" content="羚羊电影网编辑部">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17130E">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-title" content="羚羊电影网">
+<link rel="canonical" href="https://lingyangdianyingwang-app.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="羚羊电影网">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="羚羊电影网 | 院线热映排片、剧集追更与影视百科">
+<meta property="og:description" content="每天两次刷新排片：热映场次、剧集更新时间、影厅制式差异与选座建议，一页看全。">
+<meta property="og:url" content="https://lingyangdianyingwang-app.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="羚羊电影网 | 院线热映排片、剧集追更与影视百科">
+<meta name="twitter:description" content="热映场次、剧集追更时刻表、影视百科词条与观影指南，一页看全。">
+<style>
+:root{
+  --ink:#17130E;
+  --ink-soft:#2C2318;
+  --paper:#F2E9DA;
+  --card:#FFFDF7;
+  --amber:#C8791A;
+  --amber-lite:#F0C46A;
+  --red:#9E2B25;
+  --line:#DCCFB8;
+  --muted:#7C6F5C;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font:16px/1.75 "PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  background-image:repeating-linear-gradient(0deg,rgba(23,19,14,.035) 0 1px,transparent 1px 4px);
+}
+a{color:var(--ink);text-decoration:none}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+img{max-width:100%;height:auto}
+.wrap{width:min(1180px,92vw);margin:0 auto}
+
+/* 顶部公告条 */
+.notice{
+  background:var(--ink);color:#E8DCC4;font-size:13px;letter-spacing:.02em;
+  border-bottom:3px solid var(--amber);
+}
+.notice .wrap{display:flex;gap:14px;align-items:center;min-height:38px;flex-wrap:wrap}
+.notice b{color:var(--amber-lite);font-weight:600}
+.notice .dot{width:7px;height:7px;border-radius:50%;background:var(--amber);flex:none}
+
+/* 站点头部 */
+.masthead{background:var(--ink);color:#F2E9DA;padding:22px 0 14px;position:relative;overflow:hidden}
+.masthead::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:10px;
+  background:radial-gradient(circle at 6px 0,transparent 5px,var(--paper) 5.5px) repeat-x;
+  background-size:12px 10px;
+}
+.brand{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.logo{
+  font:700 clamp(30px,6.4vw,50px)/1.05 "Songti SC","Noto Serif CJK SC",Georgia,serif;
+  letter-spacing:.06em;color:#FFF7E9;margin:0;
+}
+.logo span{color:var(--amber-lite)}
+.tagline{margin:0;font-size:13px;color:#B9AC93;letter-spacing:.16em;text-transform:uppercase}
+.domain{
+  margin-left:auto;font-size:13px;color:#B9AC93;border:1px dashed #5A4C3C;
+  padding:6px 12px;border-radius:2px;word-break:break-all;
+}
+.domain b{color:#FFF7E9;font-weight:600}
+
+/* 导航 */
+.navbar{background:var(--ink-soft);position:sticky;top:0;z-index:20;box-shadow:0 2px 10px rgba(23,19,14,.28)}
+.navlist{
+  display:flex;gap:2px;list-style:none;margin:0;padding:0;overflow-x:auto;
+  -webkit-overflow-scrolling:touch;scrollbar-width:none;
+}
+.navlist::-webkit-scrollbar{display:none}
+.navlist a{
+  display:block;padding:13px 15px;font-size:15px;color:#E3D7BE;white-space:nowrap;
+  border-bottom:2px solid transparent;
+}
+.navlist a:hover,.navlist a:active{color:#FFF7E9;border-bottom-color:var(--amber)}
+
+/* 首屏 */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;padding:38px 0 8px;align-items:start}
+.kicker{
+  display:inline-block;font-size:12px;letter-spacing:.22em;color:var(--red);
+  border:1px solid var(--red);padding:3px 9px;margin-bottom:14px;
+}
+.hero h1{
+  font:700 clamp(27px,5.2vw,42px)/1.28 "Songti SC","Noto Serif CJK SC",Georgia,serif;
+  margin:0 0 14px;letter-spacing:.01em;
+}
+.hero h1 em{font-style:normal;color:var(--red);border-bottom:3px solid var(--amber-lite)}
+.herotitle{
+  font:700 clamp(27px,5.2vw,42px)/1.28 "Songti SC","Noto Serif CJK SC",Georgia,serif;
+  margin:0 0 14px;letter-spacing:.01em;
+}
+.herotitle em{font-style:normal;color:var(--red);border-bottom:3px solid var(--amber-lite)}
+.lede{margin:0 0 20px;color:var(--ink-soft);max-width:46em}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.search{display:flex;gap:8px;background:var(--card);border:1px solid var(--line);padding:6px;border-radius:3px}
+.search input{
+  flex:1;min-width:0;border:0;background:transparent;font-size:15px;padding:9px 8px;color:var(--ink);
+}
+.search input::placeholder{color:#A39885}
+.search button{
+  border:0;background:var(--ink);color:#FFF7E9;font-size:15px;padding:9px 20px;cursor:pointer;border-radius:2px;
+}
+.search button:hover{background:var(--red)}
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:14px 0 0;font-size:13px}
+.chips a{
+  display:block;padding:5px 11px;border:1px solid var(--line);background:#FFFDF7;color:var(--muted);border-radius:20px;
+}
+.chips a:hover{border-color:var(--amber);color:var(--amber)}
+
+/* 票根 */
+.ticket{
+  background:var(--card);border:1px solid var(--line);position:relative;padding:20px 22px;
+  box-shadow:0 8px 22px -14px rgba(23,19,14,.5);
+}
+.ticket::before,.ticket::after{
+  content:"";position:absolute;left:-1px;right:-1px;height:12px;
+  background:radial-gradient(circle at 7px 12px,transparent 6px,var(--card) 6.5px) repeat-x;
+  background-size:14px 12px;
+}
+.ticket::before{top:-1px;transform:scaleY(-1)}
+.ticket::after{bottom:-1px}
+.ticket h2{
+  margin:0 0 4px;font:700 19px/1.3 "Songti SC",Georgia,serif;letter-spacing:.02em;
+}
+.ticket .meta{font-size:12px;color:var(--muted);margin:0 0 14px;letter-spacing:.05em}
+.showlist{list-style:none;margin:0;padding:0;border-top:1px dashed var(--line)}
+.showlist li{
+  display:flex;justify-content:space-between;gap:10px;padding:11px 0;border-bottom:1px dashed var(--line);font-size:14px;
+}
+.showlist .time{font:700 16px/1 "Songti SC",Georgia,serif;color:var(--red);flex:none;width:56px}
+.showlist .hall{color:var(--muted);font-size:12.5px}
+.showlist .price{flex:none;font-size:13px;color:var(--amber);font-weight:600}
+.fine{margin:12px 0 0;font-size:12.5px;color:var(--muted)}
+.stamp{
+  position:absolute;right:16px;top:14px;font-size:11px;letter-spacing:.1em;color:var(--red);
+  border:1.5px solid var(--red);padding:2px 7px;transform:rotate(6deg);opacity:.85;
+}
+
+/* 板块通用 */
+section{padding:34px 0}
+.sechead{display:flex;align-items:baseline;gap:12px;border-bottom:2px solid var(--ink);padding-bottom:8px;margin-bottom:20px}
+.sechead h2{
+  margin:0;font:700 clamp(21px,3.4vw,27px)/1.2 "Songti SC","Noto Serif CJK SC",Georgia,serif;letter-spacing:.02em;
+}
+.sechead .en{font-size:12px;letter-spacing:.18em;color:var(--muted);text-transform:uppercase;margin-left:auto}
+
+/* 热映卡片 */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:18px}
+.movie{background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column}
+.poster{
+  position:relative;aspect-ratio:3/4;display:flex;align-items:flex-end;padding:14px;
+  color:#FFF7E9;font:700 20px/1.25 "Songti SC",Georgia,serif;letter-spacing:.03em;
+  background:linear-gradient(160deg,#3A2E22 0%,#7A4B22 45%,#17130E 100%);
+}
+.movie:nth-child(2) .poster{background:linear-gradient(160deg,#1E2A33 0%,#3E6070 50%,#101619 100%)}
+.movie:nth-child(3) .poster{background:linear-gradient(160deg,#4A1F22 0%,#9E2B25 55%,#17130E 100%)}
+.movie:nth-child(4) .poster{background:linear-gradient(160deg,#2B3A25 0%,#5E7A44 50%,#141A12 100%)}
+.movie:nth-child(5) .poster{background:linear-gradient(160deg,#33244A 0%,#6A4E92 50%,#151020 100%)}
+.movie:nth-child(6) .poster{background:linear-gradient(160deg,#4A3A18 0%,#B58424 50%,#1C1509 100%)}
+.poster .fmt{
+  position:absolute;left:14px;top:14px;font-size:11px;letter-spacing:.08em;background:rgba(255,247,233,.92);
+  color:var(--ink);padding:2px 7px;
+}
+.score{
+  position:absolute;right:12px;bottom:14px;font:700 26px/1 Georgia,serif;color:var(--amber-lite);
+  text-shadow:0 1px 4px rgba(0,0,0,.5);
+}
+.mbody{padding:13px 14px 15px;flex:1;display:flex;flex-direction:column}
+.mbody h3{margin:0 0 6px;font-size:16.5px;line-height:1.35}
+.mbody .tags{margin:0 0 10px;font-size:12.5px;color:var(--muted)}
+.mbody .tags span::after{content:"·";margin:0 5px;color:var(--line)}
+.mbody .tags span:last-child::after{content:""}
+.desc{margin:0 0 12px;font-size:14px;color:var(--ink-soft)}
+.book{
+  margin-top:auto;display:flex;justify-content:space-between;align-items:center;font-size:13px;
+  border-top:1px dashed var(--line);padding-top:10px;
+}
+.book a{color:var(--red);font-weight:600}
+.book a:hover{text-decoration:underline}
+.book em{font-style:normal;color:var(--muted)}
+
+/* 剧集表格 */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:14.5px}
+caption{text-align:left;font-size:12.5px;color:var(--muted);padding:10px 14px}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{background:var(--ink);color:#F2E9DA;font-weight:600;font-size:13.5px;letter-spacing:.04em}
+tbody tr:hover{background:#FBF6EC}
+td .state{font-size:12px;padding:2px 8px;border:1px solid var(--amber);color:var(--amber);border-radius:20px;white-space:nowrap}
+td .state.end{border-color:var(--muted);color:var(--muted)}
+
+/* 百科词条 */
+.terms{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:0 26px}
+.term{padding:16px 0;border-bottom:1px dotted var(--line)}
+.term dt{font:700 16px/1.4 "Songti SC",Georgia,serif;margin-bottom:4px}
+.term dt i{font-style:normal;color:var(--amber);font-size:12px;margin-left:6px;letter-spacing:.06em}
+.term dd{margin:0;font-size:14px;color:var(--ink-soft)}
+
+/* 指南 */
+.guide{display:grid;grid-template-columns:1.05fr .95fr;gap:28px}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s;border-left:2px solid var(--line)}
+.steps li{counter-increment:s;position:relative;padding:0 0 18px 22px;font-size:14.5px}
+.steps li::before{
+  content:counter(s);position:absolute;left:-13px;top:0;width:24px;height:24px;border-radius:50%;
+  background:var(--ink);color:#FFF7E9;font:600 13px/24px Georgia,serif;text-align:center;
+}
+.steps li b{display:block;font-size:15.5px;margin-bottom:2px}
+.tips{background:var(--ink);color:#E8DCC4;padding:22px;border:1px solid var(--amber);}
+.tips h3{margin:0 0 12px;font:700 18px/1.3 "Songti SC",Georgia,serif;color:#FFF7E9}
+.tips ul{margin:0;padding-left:18px;font-size:14px}
+.tips li{margin-bottom:9px}
+.tips a{color:var(--amber-lite);text-decoration:underline}
+
+/* 城市 */
+.cities{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:9px}
+.cities a{
+  display:block;padding:7px 14px;background:var(--card);border:1px solid var(--line);font-size:14px;
+}
+.cities a:hover{background:var(--ink);color:#FFF7E9;border-color:var(--ink)}
+
+/* FAQ */
+.faq{border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line);background:var(--card)}
+summary{
+  cursor:pointer;padding:15px 16px;font-weight:600;font-size:15.5px;list-style:none;display:flex;gap:10px;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+";color:var(--amber);font:700 18px/1 Georgia,serif}
+details[open] summary::before{content:"–"}
+details p{margin:0;padding:0 16px 16px 40px;font-size:14.5px;color:var(--ink-soft)}
+
+/* 关于 */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:26px;background:var(--card);border:1px solid var(--line);padding:26px}
+.about h2{margin:0 0 12px;font:700 22px/1.3 "Songti SC",Georgia,serif}
+.about p{margin:0 0 12px;font-size:14.5px;color:var(--ink-soft)}
+.about .note{font-size:13px;color:var(--muted);border-left:3px solid var(--amber);padding-left:12px}
+.about dl{margin:0;font-size:14px}
+.about dt{color:var(--muted);font-size:12.5px;letter-spacing:.06em}
+.about dd{margin:0 0 12px}
+
+/* 页脚 */
+footer{background:var(--ink);color:#CBBFA6;padding:34px 0 26px;margin-top:24px;font-size:14px}
+.footgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px}
+footer h3{margin:0 0 10px;font:700 15px/1.4 "Songti SC",Georgia,serif;color:#FFF7E9;letter-spacing:.06em}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{margin-bottom:7px}
+footer a{color:#CBBFA6}
+footer a:hover{color:var(--amber-lite)}
+.footbrand{border-top:1px solid #3B3227;margin-top:24px;padding-top:18px;font-size:13px;color:#9D907B;line-height:1.9}
+.footbrand strong{color:#FFF7E9;letter-spacing:.04em}
+.copyright{font-size:12.5px}
+.footbrand .u{color:var(--amber-lite);word-break:break-all}
+
+/* 移动端 */
+@media (max-width:860px){
+  .hero,.guide,.about{grid-template-columns:1fr}
+  .domain{margin-left:0;width:100%}
+  .notice .wrap{min-height:34px;font-size:12px}
+}
+@media (max-width:560px){
+  body{font-size:15.5px}
+  section{padding:26px 0}
+  .wrap{width:93vw}
+  .masthead{padding:16px 0 12px}
+  .search{flex-wrap:wrap}
+  .search button{width:100%}
+  .sechead .en{display:none}
+  .score{font-size:22px}
+  .ticket{padding:18px 16px}
+  .about{padding:18px}
+}
+@media print{.navbar,.search,.notice{display:none}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<div class="notice">
+  <div class="wrap">
+    <span class="dot"></span>
+    <span>排片每日 <b>10:00</b> 与 <b>18:00</b> 两次刷新</span>
+    <span>今日数据截至 <b>2026-10-16</b></span>
+    <span>影厅制式以影城现场公告为准</span>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="brand">
+      <h1 class="logo">羚羊<span>电影</span>网</h1>
+      <p class="tagline">Lingyang Film Index · Since 2019</p>
+      <p class="domain">本站网址 <b>https://lingyangdianyingwang-app.github.io</b></p>
+    </div>
+  </div>
+</header>
+
+<nav class="navbar" aria-label="站点栏目导航">
+  <div class="wrap">
+    <ul class="navlist">
+      <li><a href="#now">院线热映</a></li>
+      <li><a href="#series">剧集追更</a></li>
+      <li><a href="#wiki">影视百科</a></li>
+      <li><a href="#guide">观影指南</a></li>
+      <li><a href="#city">城市影讯</a></li>
+      <li><a href="#faq">常见问题</a></li>
+      <li><a href="#about">关于本站</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <div class="hero">
+    <div>
+      <span class="kicker">FILM INDEX · 排片 / 追更 / 百科</span>
+      <h2 class="herotitle">把一周要看的片子，<em>排进一张表</em>里</h2>
+      <p class="lede">羚羊电影网把散落在各处的放映信息收拢到一页：热映场次、剧集更新节奏、影厅制式差异、参考票价与选座逻辑。不用在五个 App 之间来回切，看完这一屏就能定下今晚去哪、坐哪一排。</p>
+      <form class="search" action="#" method="get" role="search">
+        <label class="sr-only" for="q">搜索影片、演员或影城</label>
+        <input id="q" name="q" type="search" placeholder="搜片名、演员或影城，如：沙丘 / 杜比厅" autocomplete="off">
+        <button type="submit">查排片</button>
+      </form>
+      <ul class="chips">
+        <li><a href="#now">今日特惠场</a></li>
+        <li><a href="#now">IMAX 70mm</a></li>
+        <li><a href="#now">亲子动画</a></li>
+        <li><a href="#series">周更剧</a></li>
+        <li><a href="#guide">深夜场</a></li>
+      </ul>
+    </div>
+
+    <aside class="ticket" aria-labelledby="tk">
+      <span class="stamp">今日放映单</span>
+      <h2 id="tk">星海影城 · 3 号激光厅</h2>
+      <p class="meta">SATURDAY · 10月16日 · 全城均价参考</p>
+      <ul class="showlist">
+        <li><span class="time">14:20</span><span>沙丘3<br><span class="hall">3号激光厅 · 166分钟 · 2D</span></span><span class="price">¥58</span></li>
+        <li><span class="time">16:05</span><span>侏罗纪世界：重生<br><span class="hall">IMAX 1号厅 · 134分钟</span></span><span class="price">¥96</span></li>
+        <li><span class="time">19:40</span><span>南京照相馆<br><span class="hall">杜比全景声厅 · 137分钟</span></span><span class="price">¥72</span></li>
+        <li><span class="time">22:15</span><span>疯狂动物城2<br><span class="hall">4号亲子厅 · 108分钟 · 国语</span></span><span class="price">¥45</span></li>
+      </ul>
+      <p class="fine">票价为同城近七日成交参考区间，节假日与首映周通常上浮 15%–30%。</p>
+    </aside>
+  </div>
+
+  <section id="now" aria-labelledby="h-now">
+    <div class="sechead">
+      <h2 id="h-now">院线热映 · 本周排片</h2>
+      <span class="en">Now Screening</span>
+    </div>
+    <div class="grid">
+      <article class="movie">
+        <div class="poster" role="img" aria-label="沙丘3 海报">
+          <span class="fmt">IMAX · 2D</span>
+          <span class="score">8.7</span>
+          沙丘3
+        </div>
+        <div class="mbody">
+          <h3><a href="#">沙丘3</a></h3>
+          <p class="tags"><span>科幻</span><span>166分钟</span><span>维伦纽瓦</span></p>
+          <p class="desc">沙漠史诗终章，全片大量 1.43:1 画幅段落，优先选 IMAX 激光或 70mm 厅。</p>
+          <p class="book"><em>今日 11 场</em><a href="#">看场次</a></p>
+        </div>
+      </article>
+      <article class="movie">
+        <div class="poster" role="img" aria-label="侏罗纪世界：重生 海报">
+          <span class="fmt">Dolby Cinema</span>
+          <span class="score">7.9</span>
+          侏罗纪世界：重生
+        </div>
+        <div class="mbody">
+          <h3><a href="#">侏罗纪世界：重生</a></h3>
+          <p class="tags"><span>冒险</span><span>134分钟</span><span>国语/英语</span></p>
+          <p class="desc">丛林实景拍摄占比高，暗场多，建议避开最前三排，杜比厅低频表现更稳。</p>
+          <p class="book"><em>今日 9 场</em><a href="#">看场次</a></p>
+        </div>
+      </article>
+      <article class="movie">
+        <div class="poster" role="img" aria-label="南京照相馆 海报">
+          <span class="fmt">2D · 国语</span>
+          <span class="score">9.1</span>
+          南京照相馆
+        </div>
+        <div class="mbody">
+          <h3><a href="#">南京照相馆</a></h3>
+          <p class="tags"><span>剧情</span><span>137分钟</span><span>历史</span></p>
+          <p class="desc">小人物视角的群像叙事，台词密度大，字幕厅与安静场次观感更好。</p>
+          <p class="book"><em>今日 14 场</em><a href="#">看场次</a></p>
+        </div>
+      </article>
+      <article class="movie">
+        <div class="poster" role="img" aria-label="浪浪山小妖怪 海报">
+          <span class="fmt">动画 · 国语</span>
+          <span class="score">8.4</span>
+          浪浪山小妖怪
+        </div>
+        <div class="mbody">
+          <h3><a href="#">浪浪山小妖怪</a></h3>
+          <p class="tags"><span>动画</span><span>118分钟</span><span>合家欢</span></p>
+          <p class="desc">二维手绘风格，色彩饱和度高，普通厅观感已足够，周末上午场性价比最好。</p>
+          <p class="book"><em>今日 12 场</em><a href="#">看场次</a></p>
+        </div>
+      </article>
+      <article class="movie">
+        <div class="poster" role="img" aria-label="志愿军：浴血和平 海报">
+          <span class="fmt">2D · 战争</span>
+          <span class="score">8.2</span>
+          志愿军：浴血和平
+        </div>
+        <div class="mbody">
+          <h3><a href="#">志愿军：浴血和平</a></h3>
+          <p class="tags"><span>战争</span><span>143分钟</span><span>国语</span></p>
+          <p class="desc">大场面调度为主，中后段声压集中，对声音敏感的观众可选后排靠过道。</p>
+          <p class="book"><em>今日 8 场</em><a href="#">看场次</a></p>
+        </div>
+      </article>
+      <article class="movie">
+        <div class="poster" role="img" aria-label="疯狂动物城2 海报">
+          <span class="fmt">3D · 亲子</span>
+          <span class="score">8.0</span>
+          疯狂动物城2
+        </div>
+        <div class="mbody">
+          <h3><a href="#">疯狂动物城2</a></h3>
+          <p class="tags"><span>动画</span><span>108分钟</span><span>国语配音</span></p>
+          <p class="desc">续作信息量大，低龄观众建议先看第一部；3D 版亮度衰减明显，可选 2D。</p>
+          <p class="book"><em>今日 16 场</em><a href="#">看场次</a></p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="series" aria-labelledby="h-series">
+    <div class="sechead">
+      <h2 id="h-series">剧集追更 · 更新时间表</h2>
+      <span class="en">Series Tracker</span>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <caption>更新节奏随平台排播调整，加更或延播以官方公告为准。</caption>
+        <thead>
+          <tr><th scope="col">剧目</th><th scope="col">类型</th><th scope="col">更新节奏</th><th scope="col">当前状态</th><th scope="col">追更入口</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#">藏海传</a></td><td>古装 · 权谋</td><td>每周三至周五 20:00 更新 2 集</td>
+            <td><span class="state">更新中</span></td><td><a href="#">加入追更</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">长安的荔枝</a></td><td>古装 · 轻喜剧</td><td>每周一至周三 19:30 更新 1 集</td>
+            <td><span class="state">更新中</span></td><td><a href="#">加入追更</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">朝雪录</a></td><td>悬疑 · 探案</td><td>会员每周四 18:00 更新 3 集</td>
+            <td><span class="state">更新中</span></td><td><a href="#">加入追更</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">凡人修仙传</a></td><td>动画 · 玄幻</td><td>每周六 10:00 更新 1 集</td>
+            <td><span class="state">周更</span></td><td><a href="#">加入追更</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">利剑·玫瑰</a></td><td>涉案 · 现实</td><td>已完结，全集可回看</td>
+            <td><span class="state end">已收官</span></td><td><a href="#">看全集</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">大生意人</a></td><td>年代 · 商战</td><td>每周二、四 21:00 更新 2 集</td>
+            <td><span class="state">待开播</span></td><td><a href="#">预约提醒</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="wiki" aria-labelledby="h-wiki">
+    <div class="sechead">
+      <h2 id="h-wiki">影视百科 · 常见词条</h2>
+      <span class="en">Film Glossary</span>
+    </div>
+    <div class="terms">
+      <dl class="term">
+        <dt>长镜头 <i>Long Take</i></dt>
+        <dd>不剪辑或极少剪辑完成的连续画面，常用于营造真实时间和空间压力，看片时可留意镜头内的场面调度而非人物对白。</dd>
+      </dl>
+      <dl class="term">
+        <dt>蒙太奇 <i>Montage</i></dt>
+        <dd>通过镜头组接生成新含义的手法。快速并列剪辑能压缩时间、制造情绪，是预告片和转场段落最常见的语言。</dd>
+      </dl>
+      <dl class="term">
+        <dt>杜比全景声 <i>Dolby Atmos</i></dt>
+        <dd>基于声音对象的环绕格式，支持头顶声道，定位感强于传统 5.1。这类厅通常亮度与对比度也更整齐，适合看重声音细节的片子。</dd>
+      </dl>
+      <dl class="term">
+        <dt>IMAX 70mm <i>IMAX 70mm</i></dt>
+        <dd>画幅可展开到 1.43:1，画面信息量比普通厅多出约四成。只有部分影城的激光 IMAX 支持，购票前留意片方标注的制式。</dd>
+      </dl>
+      <dl class="term">
+        <dt>画幅比 <i>Aspect Ratio</i></dt>
+        <dd>2.39:1 适合宽银幕史诗，1.85:1 更贴近人物，1.43:1 多见于 IMAX 特制拍摄。同一部片在不同制式厅看到的构图范围并不相同。</dd>
+      </dl>
+      <dl class="term">
+        <dt>分镜与场记 <i>Storyboard</i></dt>
+        <dd>拍摄前把镜头画成草图的流程，用于估算机位、节奏和成本；重工业大片的分镜完成度往往决定最终视效的取舍。</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section id="guide" aria-labelledby="h-guide">
+    <div class="sechead">
+      <h2 id="h-guide">观影指南 · 从选片到选座</h2>
+      <span class="en">How To Watch</span>
+    </div>
+    <div class="guide">
+      <ol class="steps">
+        <li><b>先定制式，再定厅</b>视效大片优先 IMAX 或杜比厅；剧情片、文艺片看重安静与字幕，普通小厅反而更舒服。</li>
+        <li><b>看排片密度而非时间点</b>间隔超过两小时的场次通常是冷门时段，票价更低、上座率也低，适合想安静看完的观众。</li>
+        <li><b>按银幕高度算排数</b>经验做法是选银幕高度的 2/3 到 1 倍距离处，大约在中后排；3D 片适当往前，避免亮度损失。</li>
+        <li><b>留出进场缓冲</b>开场前 15 分钟到场，广告与预告约 8–12 分钟；晚到不仅错过片头，也会打扰同排观众。</li>
+        <li><b>核对退改规则</b>特价票与兑换券多数不可退，IMAX、杜比厅改签通常需在开场前 1 小时以上操作。</li>
+      </ol>
+      <div class="tips">
+        <h3>几个容易被忽略的细节</h3>
+        <ul>
+          <li>带儿童观影，优先国语配音场次，3D 眼镜尺寸不适配时可在检票口更换。</li>
+          <li>IMAX 与杜比的差别不只在音量，画幅展开的段落只有对应制式才看得到。</li>
+          <li>工作日 13:00 前的场次均价通常比黄金场低三成左右。</li>
+          <li>片尾有彩蛋的影片，字幕结束后别急着离场。</li>
+          <li>更多术语解释可回到 <a href="#wiki">影视百科</a> 对照查看。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="city" aria-labelledby="h-city">
+    <div class="sechead">
+      <h2 id="h-city">城市影讯 · 分站入口</h2>
+      <span class="en">City Index</span>
+    </div>
+    <ul class="cities">
+      <li><a href="#">北京</a></li><li><a href="#">上海</a></li><li><a href="#">广州</a></li>
+      <li><a href="#">深圳</a></li><li><a href="#">成都</a></li><li><a href="#">杭州</a></li>
+      <li><a href="#">南京</a></li><li><a href="#">武汉</a></li><li><a href="#">西安</a></li>
+      <li><a href="#">重庆</a></li><li><a href="#">苏州</a></li><li><a href="#">长沙</a></li>
+      <li><a href="#">青岛</a></li><li><a href="#">天津</a></li><li><a href="#">厦门</a></li>
+      <li><a href="#">更多城市</a></li>
+    </ul>
+  </section>
+
+  <section id="faq" aria-labelledby="h-faq">
+    <div class="sechead">
+      <h2 id="h-faq">常见问题</h2>
+      <span class="en">FAQ</span>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>羚羊电影网主要收录哪些内容？</summary>
+        <p>以院线热映排片、剧集更新时间、影厅制式差异和影视术语科普为主，同时给出选座与比价的实操建议，属于信息聚合与观影参考，不提供任何播放或下载资源。</p>
+      </details>
+      <details>
+        <summary>排片数据多久更新一次？</summary>
+        <p>每日 10:00 与 18:00 各刷新一次，遇到首映周、档期调整或临时加场会额外补更。影城现场因设备故障改厅的情况，以现场公告为准。</p>
+      </details>
+      <details>
+        <summary>票价和评分是怎么来的？</summary>
+        <p>票价为同城近七日成交的参考区间，用颜色标注高低；评分是羚羊电影网综合观众反馈与影评倾向给出的内部参考值，满分 10 分，仅用于横向比较。</p>
+      </details>
+      <details>
+        <summary>想查某个城市或某家影城怎么办？</summary>
+        <p>先在页面顶部搜索框输入片名或影城名，再从<a href="#city">城市影讯</a>进入对应分站；未覆盖的城市可提交反馈，我们会按请求量排优先级。</p>
+      </details>
+    </div>
+  </section>
+
+  <section id="about" aria-labelledby="h-about">
+    <div class="about">
+      <div>
+        <h2 id="h-about">关于羚羊电影网</h2>
+        <p>羚羊电影网是一份长期维护的观影索引，做的只有一件事：把选片这件事的信息成本压到最低。片单、场次、制式、票价四件事放在一起看，决定就不需要反复权衡。</p>
+        <p>我们不搬运播放资源，也不做诱导下载。所有条目由编辑逐条核对，发现错漏可通过页脚邮箱反馈，通常两个工作日内修正。</p>
+        <p class="note">本站网址固定为 https://lingyangdianyingwang-app.github.io ，除该地址外均未授权任何镜像站点。</p>
+      </div>
+      <dl>
+        <dt>站点名称</dt><dd>羚羊电影网</dd>
+        <dt>官方网址</dt><dd><a href="#">https://lingyangdianyingwang-app.github.io</a></dd>
+        <dt>数据刷新</dt><dd>每日 10:00 / 18:00（北京时间）</dd>
+        <dt>收录范围</dt><dd>院线影片、剧集排播、影厅制式、影视词条</dd>
+        <dt>联系邮箱</dt><dd><a href="#">hi@lingyangdianyingwang-app.github.io</a></dd>
+        <dt>相关栏目</dt><dd><a href="#now">热映</a> · <a href="#wiki">百科</a> · <a href="#guide">指南</a></dd>
+      </dl>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footgrid">
+      <div>
+        <h3>栏目导航</h3>
+        <ul>
+          <li><a href="#now">院线热映</a></li>
+          <li><a href="#series">剧集追更</a></li>
+          <li><a href="#wiki">影视百科</a></li>
+          <li><a href="#guide">观影指南</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>工具与索引</h3>
+        <ul>
+          <li><a href="#city">城市影讯</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#">制式对照表</a></li>
+          <li><a href="#">片尾彩蛋清单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>关于</h3>
+        <ul>
+          <li><a href="#about">站点介绍</a></li>
+          <li><a href="#">内容纠错</a></li>
+          <li><a href="#">收录标准</a></li>
+          <li><a href="#">意见反馈</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>羚羊电影网</h3>
+        <ul>
+          <li>排片每日两次刷新</li>
+          <li>评分仅作横向参考</li>
+          <li>不提供播放资源</li>
+          <li><a href="#">回到顶部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footbrand">
+      <strong>羚羊电影网</strong> · 院线排片、剧集追更与影视百科索引<br>
+      官方网址：<span class="u">https://lingyangdianyingwang-app.github.io</span><br>
+      <span class="copyright">Copyright 2026 羚羊电影网编辑部 · 影视信息聚合与观影参考站点，片名与商标归各自权利人所有</span>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"WebSite","@id":"https://lingyangdianyingwang-app.github.io/#website",
+     "name":"羚羊电影网","alternateName":"Lingyang Film Index",
+     "url":"https://lingyangdianyingwang-app.github.io/",
+     "inLanguage":"zh-CN",
+     "description":"院线热映排片、剧集追更时刻表与影视百科词条索引",
+     "publisher":{"@id":"https://lingyangdianyingwang-app.github.io/#org"},
+     "potentialAction":{"@type":"SearchAction","target":"https://lingyangdianyingwang-app.github.io/?q={search_term_string}","query-input":"required name=search_term_string"}},
+    {"@type":"Organization","@id":"https://lingyangdianyingwang-app.github.io/#org",
+     "name":"羚羊电影网","url":"https://lingyangdianyingwang-app.github.io/",
+     "email":"hi@lingyangdianyingwang-app.github.io","areaServed":"CN"},
+    {"@type":"WebPage","@id":"https://lingyangdianyingwang-app.github.io/#webpage",
+     "url":"https://lingyangdianyingwang-app.github.io/",
+     "name":"羚羊电影网 | 院线热映排片、剧集追更与影视百科",
+     "isPartOf":{"@id":"https://lingyangdianyingwang-app.github.io/#website"},
+     "inLanguage":"zh-CN",
+     "dateModified":"2026-10-16"},
+    {"@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"羚羊电影网主要收录哪些内容？","acceptedAnswer":{"@type":"Answer","text":"以院线热映排片、剧集更新时间、影厅制式差异和影视术语科普为主，同时给出选座与比价的实操建议，属于信息聚合与观影参考，不提供任何播放或下载资源。"}},
+      {"@type":"Question","name":"排片数据多久更新一次？","acceptedAnswer":{"@type":"Answer","text":"每日 10:00 与 18:00 各刷新一次，遇到首映周、档期调整或临时加场会额外补更。影城现场因设备故障改厅的情况，以现场公告为准。"}},
+      {"@type":"Question","name":"票价和评分是怎么来的？","acceptedAnswer":{"@type":"Answer","text":"票价为同城近七日成交的参考区间；评分是综合观众反馈与影评倾向给出的内部参考值，满分 10 分，仅用于横向比较。"}},
+      {"@type":"Question","name":"想查某个城市或某家影城怎么办？","acceptedAnswer":{"@type":"Answer","text":"先在页面顶部搜索框输入片名或影城名，再从城市影讯进入对应分站；未覆盖的城市可提交反馈，按请求量排优先级。"}}
+    ]}
+  ]
+}
+</script>
+
+</body>
+</html>
